@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body{
     color: #fff;
 }
 
-h1{
+h1 {
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -23,7 +23,19 @@ h1{
     margin-bottom: 2rem;
 }
 
-.media-container {
+.sensor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    height: 22vh;
+}
+
+.sensor .media-container {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -31,16 +43,26 @@ h1{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20vh;
+    padding: 0px;
+    height: 0px;
+    transition: ease-in 0.2s;
+    overflow: hidden;
+}
+
+.sensor:hover .media-container {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    height: 25vh;
     padding: 20px;
 }
 
-.media-container:hover{
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+.media-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.media-info {
-    text-align: center;
+.desc {
+    margin: 40px;
 }
 
 .media-info img {
@@ -53,13 +75,20 @@ h1{
     align-items: center;
 }
 
-.media-buttons button{
+.media-buttons button {
     border: none;
     outline: none;
     background: none;
-    color: #000;
+    color: #fff;
     padding: 10px;
     margin: 0 5px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 40px;
+}
+
+.media-buttons button:hover {
+    color: #2d2f46;
+    scale: 1.2;
     transition: all 0.3s ease;
 }

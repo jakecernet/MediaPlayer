@@ -7,20 +7,27 @@
 </head>
 
 <body>
-  <div class="media-container">
-    <div class="media-info">
-      <img src="album-cover.jpg" alt="Album Cover">
-      <h2>Song Title</h2>
-      <p>Artist Name</p>
-      <p>Album Name</p>
-    </div>
-    <div class="media-buttons">
-      <button id="play-btn">Play</button>
-      <button id="pause-btn">Pause</button>
-      <button id="stop-btn">Stop</button>
-    </div>
-    <div class="media-volume">
-      <input type="range" id="volume-slider" min="0" max="100">
+  <div class="controls">
+    <div class="sensor">
+      <div class="media-container">
+        <div class="media-info">
+          <div class="image">
+            <img src="https://jakecer.tk/img/logo.png" alt="Album Cover">
+          </div>
+          <div class="desc">
+            <h2>Song Title</h2>
+            <p>Artist Name</p>
+            <p>Album Name</p>
+          </div>
+        </div>
+        <div class="media-buttons">
+          <button id="play-btn">⏵</button>
+          <button id="stop-btn">⏹</button>
+        </div>
+        <div class="media-volume">
+          <input type="range" id="volume-slider" min="0" max="100">
+        </div>
+      </div>
     </div>
   </div>
   <script src="renderer.js"></script>
