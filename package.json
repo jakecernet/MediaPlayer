@@ -1,0 +1,17 @@
+{
+  "name": "mediaplayer",
+  "version": "1.0.0",
+  "description": "Simple media player",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.4"
+  },
+  "devDependencies": {
+    "electron": "^26.0.0"
+  }
+}
