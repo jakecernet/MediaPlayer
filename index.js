@@ -2,14 +2,16 @@ const { app, BrowserWindow } = require('electron');
 
 let mainWindow;
 
-app.on('ready', () => {
+function createWindow() {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true,
-    },
+      nodeIntegration: true // This enables the use of require in the renderer process
+    }
   });
 
-  mainWindow.loadFile('index.html'); // Load the HTML file for renderer process
-});
+  mainWindow.loadFile('index.html');
+}
+
+app.on('ready', createWindow);

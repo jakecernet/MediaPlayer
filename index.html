@@ -4,20 +4,25 @@
 <head>
   <title>Media Player</title>
   <link rel="stylesheet" href="style.css">
+  <script src="jsmediatags.min.js"></script>
 </head>
 
 <body>
+  <div class="input">
+    <input type="text" id="input" placeholder="Enter an MP3 link.">
+    <button id="search-btn" onclick="playAudio()">Search</button>
+  </div>
   <div class="controls">
     <div class="sensor">
       <div class="media-container">
         <div class="media-info">
           <div class="image">
-            <img src="https://jakecer.tk/img/logo.png" alt="Album Cover">
+            <img src="https://jakecer.tk/img/logo.png" alt="Album Cover" id="cover-image">
           </div>
           <div class="desc">
-            <h2>Song Title</h2>
-            <p>Artist Name</p>
-            <p>Album Name</p>
+            <h2 id="song-title">Song Title</h2>
+            <p id="artist-name">Artist Name</p>
+            <p id="album-name">Album Name</p>
           </div>
         </div>
         <div class="media-buttons">
@@ -31,6 +36,7 @@
     </div>
   </div>
   <script src="renderer.js"></script>
+  <webview src="index.html" preload="preload.js"></webview>
 </body>
 
 </html>

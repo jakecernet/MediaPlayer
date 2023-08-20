@@ -23,6 +23,41 @@ h1 {
     margin-bottom: 2rem;
 }
 
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.input input {
+    width: 600px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #2d2f46;
+    transition: all 0.3s ease;
+}
+
+.input button {
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    padding: 0 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.input button:hover {
+    color: #2d2f46;
+}
+
 .sensor{
     display: flex;
     justify-content: center;
