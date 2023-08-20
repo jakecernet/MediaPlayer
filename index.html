@@ -4,7 +4,6 @@
 <head>
   <title>Media Player</title>
   <link rel="stylesheet" href="style.css">
-  <script src="jsmediatags.min.js"></script>
 </head>
 
 <body>
@@ -13,25 +12,13 @@
     <button id="search-btn" onclick="playAudio()">Search</button>
   </div>
   <div class="controls">
-    <div class="sensor">
-      <div class="media-container">
-        <div class="media-info">
-          <div class="image">
-            <img src="https://jakecer.tk/img/logo.png" alt="Album Cover" id="cover-image">
-          </div>
-          <div class="desc">
-            <h2 id="song-title">Song Title</h2>
-            <p id="artist-name">Artist Name</p>
-            <p id="album-name">Album Name</p>
-          </div>
-        </div>
-        <div class="media-buttons">
-          <button id="play-btn">⏵</button>
-          <button id="stop-btn">⏹</button>
-        </div>
-        <div class="media-volume">
-          <input type="range" id="volume-slider" min="0" max="100">
-        </div>
+    <div class="media-container">
+      <div class="media-buttons">
+        <button id="play-btn">⏵</button>
+        <button id="stop-btn">⏹</button>
+      </div>
+      <div class="media-volume">
+        <input type="range" id="volume-slider" min="0" max="100">
       </div>
     </div>
   </div>

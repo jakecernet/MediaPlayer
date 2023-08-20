@@ -58,19 +58,7 @@ h1 {
     color: #2d2f46;
 }
 
-.sensor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    height: 22vh;
-}
-
-.sensor .media-container {
+.media-container {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -79,15 +67,7 @@ h1 {
     left: 0;
     width: 100%;
     padding: 0px;
-    height: 0px;
-    transition: ease-in 0.2s;
-    overflow: hidden;
-}
-
-.sensor:hover .media-container {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
     height: 25vh;
-    padding: 20px;
 }
 
 .media-info {
